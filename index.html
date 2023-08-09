@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elágazások</title>
+</head>
+<body>
+    <script>
+
+//----------------------------------10. fejezet:  KONTROLL STRUKTÚRA II.( ELÁGAZÁSOK)  ----------------------------
+//                    https://www.youtube.com/watch?v=BhGGtaOOY5k&ab_channel=K%C3%B3db%C3%A1zis
+
+
+// if / else: 
+
+
+var age = prompt("Add meg a korodat:");
+/*
+if (age < 20){
+    alert("Fiatalabb vagy a 20 évesnél")
+}
+else if (age == 20){
+    alert("20 éves vagy")
+}
+else{
+    alert("Idősebb vagy a 20 évesnél")
+};
+
+*/
+//------------------------------------------
+console.log('************');
+  // switch statement: 
+
+  // explicit match --> string vagy szám egyezőségének vizsgálata
+
+ /* switch(age){
+    case '18':
+        console.log ("A felhasználó 18 éves");
+        break;
+    case '19':
+        console.log ('A felhasználó 19 éves');
+        break;
+    default:
+        console.log('A felhasználó ismeretlen');
+  }
+  */
+//---------------------------------------
+
+    // másik switch eset:
+
+ switch(true){
+
+    case age < 20 :
+        alert("A felhasználó fiatalabb mint 20");
+        break;
+    case age == 20 :
+        alert("A felhasználó 20 éves");
+        break;
+    default :
+        alert("A felhasználó idősebb mint 20");
+
+ }
+    </script>
+</body>
+</html>
